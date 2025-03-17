@@ -12,5 +12,4 @@ export default function Home() {
       <FlightHome />
       <FlightFooter />
     </div>
-  );
-}
+)}
