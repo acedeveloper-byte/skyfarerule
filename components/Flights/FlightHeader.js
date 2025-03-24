@@ -1,389 +1,378 @@
-
-import React from "react";
+import React from 'react'
 
 const FlightHeader = () => {
   return (
-    <header>
-      <div className="upper-head clearfix">
-        <div className="container">
-          <div className="contact-info ">
-            <p>
-              <i className="flaticon-phone-call"></i> Phone: +1 (855) 838 5939
-            </p>
-            <p>
-              <i className="flaticon-mail"></i> Mail:{" "}
-              <a href="tel: contact@skyfarerules.com" className="text-white">
-                contact@skyfarerules.com
-              </a>
-            </p>
-          </div>
-          {/* <div className="login-btn pull-right">
-            <a href="login">
-              <i className="fa fa-user-plus"></i> Register
-            </a>
-            <a href="login">
-              <i className="fa fa-unlock-alt"></i> Login
-            </a>
-          </div> */}
-        </div>
-      </div>
-      <div className="navigation">
-        <div className="container">
-          <div className="navigation-content">
-            <div className="header_menu">
-              <nav className="navbar navbar-default navbar-sticky-function navbar-arrow">
-                <div className="logo pull-left">
-                  <a href="">
-                    {/* <img alt="Image" src="/images/Yatra-01.png" /> */}
-                    <h1 class="">SkyfareRule</h1>
-                  </a>
+    <div>
+       <div className="main-header main-header-four">
+        <div className="header-topbar header-top-six text-center bg-transparent">
+            <div className="container">
+                <div className="d-flex align-items-center justify-content-between flex-wrap">
+                    <div className="d-flex align-items-center flex-wrap">
+                        <p className="d-flex align-items-center fs-14 mb-2 me-3 "><i className="isax isax-call5 me-2"></i>Toll Free : +1 56565 56594</p>
+                        <p className="mb-2 d-flex align-items-center fs-14"><i className="isax isax-message-text-15 me-2"></i>Email : <a href="" className="text-decoration-none" className="__cf_email__" data-cfemail="cea7a0a8a18eabb6afa3bea2abe0ada1a3">contact@skyfarerules.com</a></p>
+                    </div>
+                    <div className="navbar-logo mb-2">
+                        <a className="logo-dark header-logo" href="index.html">
+                            <img src="	https://www.skyfarerules.com/wp-content/uploads/2024/07/Skyfarerules-logo-1.png" className="logo" alt="Logo" style={{ maxWidth: "69%", height: "auto" }}
+                            />
+                        </a>
+                        <a className="logo-white header-logo" href="index.html">
+                            <img src="/img/logo.svg" className="logo" alt="Logo" />
+                        </a>
+                    </div>
+                    <div className="d-flex align-items-center">
+                        <div className="dropdown mb-2 me-3">
+                            <a href=""  className="dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                            {/* <ul className="dropdown-menu p-2 mt-2">
+                                <li><a className="dropdown-item rounded" href="" className="text-decoration-none">USD</a></li>
+                                <li><a className="dropdown-item rounded" href="" className="text-decoration-none">YEN</a></li>
+                                <li><a className="dropdown-item rounded" href="" className="text-decoration-none">EURO</a></li>
+                            </ul> */}
+                        </div>
+                        <div className="me-3 mb-2">
+                            <a href="" className="theme-toggle text-decoration-none" id="dark-mode-toggle" >
+                                <i className="isax isax-moon"></i>
+                            </a>
+                            <a href="" className="text-decoration-none theme-toggle" id="light-mode-toggle" >
+                                <i className="isax isax-sun-1"></i>
+                            </a>
+                        </div>
+                        <div className="fav-dropdown mb-2 me-3">
+                            <a href="wishlist.html" className="position-relative">
+                                <i className="isax isax-heart"></i><span className="count-icon bg-secondary text-gray-9">0</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href=""  className="text-white btn btn-dark w-100 mb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#login-modal">Sign In</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="navbar" className="navbar-nav-wrapper">
-                  <ul className="nav navbar-nav" id="responsive-menu">
-                    <li className="active">
-                      <a href="http://localhost:3000/">
-                        Home <i className="fa fa-angle-down"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="./about-us">
-                        About Us <i className="fa fa-angle-down"></i>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="blog">Blog </a>
-                    </li>
-
-                    <li>
-                      <a href="hotel">
-                        Hotel <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="hotel">Hotel Homepage</a>
-                        </li>
-                        <li>
-                          <a href="grid-view">Grid View</a>
-                        </li>
-                        <li>
-                          <a href="list-view">List View</a>
-                        </li>
-                        <li>
-                          <a href="hotel-detail">Detail Page</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="flight">
-                        Flights<i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="flight">Flight Homepage</a>
-                        </li>
-                        <li>
-                          <a href="flight-grid-view">Grid View</a>
-                        </li>
-                        <li>
-                          <a href="flight-list-view">List View</a>
-                        </li>
-                        <li>
-                          <a href="flight-detail">Detail Page</a>
-                        </li>
-                        <li>
-                          <a href="flight-booking">Booking</a>
-                        </li>
-                        <li>
-                          <a href="flight-confirm">Thank You</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-star"></i> Cars
-                        <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="car-grid-view">Car Grid View</a>
-                        </li>
-                        <li>
-                          <a href="car-list-view">Car List View</a>
-                        </li>
-                        <li>
-                          <a href="car-detail">Car Detail Page</a>
-                        </li>
-                        <li>
-                          <a href="car-booking">Payment</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-star"></i> Cruise
-                        <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="cruise-grid-view">Cruise Grid View</a>
-                        </li>
-                        <li>
-                          <a href="cruise-list-view">Cruise List View</a>
-                        </li>
-                        <li>
-                          <a href="cruise-detail">Cruise Detail Page</a>
-                        </li>
-                        <li>
-                          <a href="cruise-booking">Payment</a>
-                        </li>
-                      </ul>
-                    </li>
-                    {/* <li>
-                      <a href="#">
-                        Dashboard <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="dashboard">Dashboard</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-my-profile">Dashboard Profile</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-booking">Dashboard Bookings</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-history">Dashboard History</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-list">Dashboard Listing</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-addtour">Dashboard Add Tour</a>
-                        </li>
-                        <li>
-                          <a href="dashboard-reviews">Dashboard Reviews</a>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li>
-                      <a href="#">
-                        Shop <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul>
-                        <li>
-                          <a href="shop">Shop List</a>
-                        </li>
-                        <li>
-                          <a href="shop-detail">Shop Detail</a>
-                        </li>
-                        <li>
-                          <a href="cart">Cart</a>
-                        </li>
-                        <li>
-                          <a href="checkout">Checkout</a>
-                        </li>
-                        <li>
-                          <a href="login">Login Page</a>
-                        </li>
-                        <li>
-                          <a href="forgot-password">Forgot Password</a>
-                        </li>
-                      </ul>
-                    </li> */}
-                  </ul>
-                </div>
-                <div id="slicknav-mobile"></div>
-              </nav>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
-  );
-};
+       
 
-export default FlightHeader;
-// =======
-// import React from 'react'
+        <header className="header-six">
+            <div className="container">
+                <div className="offcanvas-info">
+                    <div className="offcanvas-wrap">
+                        <div className="offcanvas-detail">
+                            <div className="offcanvas-head">
+                                <div className="d-flex justify-content-between align-items-center mb-3">
+                                    <a href="index.html" className="black-logo-responsive">
+                                        <img src="/img/logo-dark.svg" alt="logo-img" />
+                                    </a>
+                                    <a href="index.html" className="white-logo-responsive">
+                                        <img src="/img/logo.svg" alt="logo-img" />
+                                    </a>
+                                    <div className="offcanvas-close">
+                                        <i className="ti ti-x"></i>
+                                    </div>
+                                </div>
+                                <div className="wishlist-info d-flex justify-content-between align-items-center">
+                                    <h6 className="fs-16 fw-medium">Wishlist</h6>
+                                    <div className="d-flex align-items-center">
+                                        <div className="fav-dropdown">
+                                            <a href="wishlist.html" className="position-relative">
+                                                <i className="isax isax-heart"></i><span className="count-icon bg-secondary text-gray-9">0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mobile-menu fix mb-3"></div>
+                            <div className="offcanvas__contact">
+                                <div className="mt-4">
+                                    <div className="header-dropdown d-flex flex-fill">
+                                        <div className="w-100">
+                                            <div className="dropdown">
+                                                <a href=""  className="dropdown-toggle bg-white border d-block text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+													USD
+												</a>
+                                                {/* <ul className="dropdown-menu p-2">
+                                                    <li><a className="dropdown-item rounded" href="" className="text-decoration-none">USD</a></li>
+                                                    <li><a className="dropdown-item rounded" href="" className="text-decoration-none">YEN</a></li>
+                                                    <li><a className="dropdown-item rounded" href="" className="text-decoration-none">EURO</a></li>
+                                                </ul> */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div><a href=""  className="text-white btn btn-dark w-100 mb-3 text-decoration-none" data-bs-toggle="modal" data-bs-target="#login-modal">Sign In</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="offcanvas-overlay"></div>
+                <div className="header-nav">
+                    <div className="main-menu-wrapper">
+                        <div className="navbar-logo">
+                            <a className="logo-white header-logo" href="index.html">
+                                <img src="/img/logo.svg" className="logo" alt="Logo" />
+                            </a>
+                        </div>
+                        <nav id="mobile-menu">
+                            <ul className="main-nav">
+                                <li className="">
+                                    <a href="" className="text-decoration-none">Home</a>
+                                   
+                                </li>
+                                <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Flight</a>
+                                    {/* <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Flight Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="flight-grid.html">Flight Grid</a></li>
+                                                            <li><a href="flight-list.html">Flight List</a></li>
+                                                            <li><a href="flight-details.html">Flight Details</a></li>
+                                                            <li><a href="flight-booking-confirmation.html">Flight Booking</a></li>
+                                                            <li><a href="add-flight.html">Add Flight</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/flight.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> */}
+                                </li>
+                                <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Hotel<i className="fa-solid fa-angle-down"></i></a>
+                                    {/* <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Hotel Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="hotel-grid.html">Hotel Grid</a></li>
+                                                            <li><a href="hotel-list.html">Hotel List</a></li>
+                                                            <li><a href="hotel-map.html">Hotel Map</a></li>
+                                                            <li><a href="hotel-details.html">Hotel Details</a></li>
+                                                            <li><a href="booking-confirmation.html">Hotel Booking</a></li>
+                                                            <li><a href="add-hotel.html">Add Hotel</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/hotel.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> */}
+                                </li>
+                                <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Car<i className="fa-solid fa-angle-down"></i></a>
+                                    {/* <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Car Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="car-grid.html">Car Grid</a></li>
+                                                            <li><a href="car-list.html">Car List</a></li>
+                                                            <li><a href="car-map.html">Car Map</a></li>
+                                                            <li><a href="car-details.html">Car Details</a></li>
+                                                            <li><a href="car-booking-confirmation.html">Car Booking</a></li>
+                                                            <li><a href="add-car.html">Add Car</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/car.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> */}
+                                </li>
+                                <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Cruise<i className="fa-solid fa-angle-down"></i></a>
+                                    {/* <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Cruise Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="cruise-grid.html">Cruise Grid</a></li>
+                                                            <li><a href="cruise-list.html">Cruise List</a></li>
+                                                            <li><a href="cruise-map.html">Cruise Map</a></li>
+                                                            <li><a href="cruise-details.html">Cruise Details</a></li>
+                                                            <li><a href="cruise-booking-confirmation.html">Cruise Booking</a></li>
+                                                            <li><a href="add-cruise.html">Add Cruise</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/cruise.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> */}
+                                </li>
+                                {/* <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Tour<i className="fa-solid fa-angle-down"></i></a>
+                                    <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Tour Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="tour-grid.html">Tour Grid</a></li>
+                                                            <li><a href="tour-list.html">Tour List</a></li>
+                                                            <li><a href="tour-map.html">Tour Map</a></li>
+                                                            <li><a href="tour-details.html">Tour Details</a></li>
+                                                            <li><a href="tour-booking-confirmation.html">Tour Booking</a></li>
+                                                            <li><a href="add-tour.html">Add Tour</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/tour.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> */}
+                                {/* <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Pages<i className="fa-solid fa-angle-down"></i></a>
+                                    <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <h6>Pages</h6>
+                                                <div className="row g-lg-4">
+                                                    <div className="col-lg-6">
+                                                        <ul>
+                                                            <li><a href="about-us.html">About</a></li>
+                                                            <li><a href="gallery.html">Gallery</a></li>
+                                                            <li><a href="testimonial.html">Testimonials</a></li>
+                                                            <li><a href="faq.html">Faq</a></li>
+                                                            <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                                            <li><a href="team.html">Teams</a></li>
+                                                            <li><a href="invoices.html">Invoice</a></li>
+                                                            <li><a href="blog-grid.html">Blogs Grid</a></li>
+                                                            <li><a href="blog-list.html">Blogs List</a></li>
+                                                            <li><a href="blog-details.html">Blogs Details</a></li>
+                                                            <li><a href="contact-us.html">Contact Us</a></li>
+                                                            <li><a href="booking-confirmation.html">Booking Confirmation</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <ul>
+                                                            <li><a href="destination.html">Destination</a></li>
+                                                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                                            <li><a href="login.html">Login</a></li>
+                                                            <li><a href="register.html">Register</a></li>
+                                                            <li><a href="forgot-password.html">Forgot Password</a></li>
+                                                            <li><a href="change-password.html">Change Password</a></li>
+                                                            <li><a href="error-404.html">404 Error</a></li>
+                                                            <li><a href="error-500.html">500 Error</a></li>
+                                                            <li><a href="under-maintenance.html">Under Maintenance</a></li>
+                                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                            <li><a href="index-rtl.html">RTL</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> */}
+                                {/* <li className="has-submenu mega-innermenu">
+                                    <a href="" className="text-decoration-none">Dashboard<i className="fa-solid fa-plus"></i></a>
+                                    <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row g-lg-4">
+                                                    <div className="col-lg-6">
+                                                        <h6>User Dashboard</h6>
+                                                        <ul>
+                                                            <li><a href="dashboard.html">Dashboard</a></li>
+                                                            <li><a href="customer-flight-booking.html">My Bookings</a></li>
+                                                            <li><a href="review.html">Reviews</a></li>
+                                                            <li><a href="chat.html">Message</a></li>
+                                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                                            <li><a href="wallet.html">Wallet</a></li>
+                                                            <li><a href="payment.html">Payments</a></li>
+                                                            <li><a href="profile-settings.html">Profile Settings</a></li>
+                                                            <li><a href="notification-settings.html">Notifications</a></li>
+                                                            <li><a href="my-profile.html">My Profile</a></li>
+                                                            <li><a href="security-settings.html">Settings</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <h6>Agent Dashboard</h6>
+                                                        <ul>
+                                                            <li><a href="agent-dashboard.html">Dashboard</a></li>
+                                                            <li><a href="agent-listings.html">Listings</a></li>
+                                                            <li><a href="agent-hotel-booking.html">Bookings</a></li>
+                                                            <li><a href="agent-enquirers.html">Enquiries</a></li>
+                                                            <li><a href="agent-earnings.html">Earnings</a></li>
+                                                            <li><a href="agent-review.html">Reviews</a></li>
+                                                            <li><a href="agent-settings.html">Settings</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> */}
+                            </ul>
+                        </nav>
+                        <div className="header-btn align-items-center">
+                            <div className="dropdown me-3">
+                                <a href="" className="text-decoration-none dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+									USD
+								</a>
+                                <ul className="dropdown-menu p-2 mt-2">
+                                    <li><a className="dropdown-item rounded text-decoration-none" href="" >USD</a></li>
+                                    <li><a className="dropdown-item rounded text-decoration-none" href="" >YEN</a></li>
+                                    <li><a className="dropdown-item rounded text-decoration-none" href="" s>EURO</a></li>
+                                </ul>
+                            </div>
+                            <div className="me-3">
+                                <a href="dashboard.html">
+                                    <i className="isax isax-user"></i>
+                                </a>
+                            </div>
+                            <div className="fav-dropdown  me-3">
+                                <a href="wishlist.html" className="position-relative">
+                                    <i className="isax isax-heart"></i><span className="count-icon bg-secondary text-gray-9">0</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" className="text-decoration-none" className="text-white btn btn-dark w-100 mb-2" data-bs-toggle="modal" data-bs-target="#register-modal">Sign In</a>
+                            </div>
+                        </div>
+                        <div className="header__hamburger d-xl-none my-auto">
+                            <div className="sidebar-menu">
+                                <i className="isax isax-menu5"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-// const FlightHeader = () => {
-//   return (
-//     <>
-//            <header>
-//       <div class="upper-head clearfix">
-//         <div class="container">
-//           <div class="contact-info">
-//             <p><i class="flaticon-phone-call"></i> Phone: (012)-345-6789</p>
-//             <p><i class="flaticon-mail"></i> Mail: <a href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdc9d2c8cfd3c9cfdccbd8d1fdc9d8cec9d0dcd4d193ded2d0">[email&#160;protected]</a></p>
-//           </div>
-//           <div class="login-btn pull-right">
-//             <a href="login.html"><i class="fa fa-user-plus"></i> Register</a>
-//             <a href="login.html"><i class="fa fa-unlock-alt"></i> Login</a>
-//           </div>
-//         </div>
-//       </div>
-//     <div class="navigation">
-//       <div class="container">
-//         <div class="navigation-content">
-//           <div class="header_menu">
-//             <nav class="navbar navbar-default navbar-sticky-function navbar-arrow">
-//               <div class="logo pull-left">
-//                 <a href="index.html"><img alt="Image" src="/images/Yatra-01.png" /></a>
-//               </div>
-//               <div id="navbar" class="navbar-nav-wrapper">
-//                 <ul class="nav navbar-nav" id="responsive-menu">
-//                   <li class="active">
-//                     <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li>
-//                         <a href="#">Travel</a>
-//                         <ul>
-//                           <li><a href="index.html">Home Slider</a></li>
-//                           <li><a href="index-banner.html">Home Banner</a></li>
-//                           <li><a href="index-video.html">Home Video</a></li>
-//                         </ul>
-//                       </li>
-//                       <li><a href="index-1.html">Travel Style 2</a></li>
-//                       <li><a href="index-2.html">Travel Style 3</a></li>
-//                       <li><a href="index-3.html">Travel style 4</a></li>
-//                       <li><a href="index-5.html">Travel style 5 <span class="fw-bold pink">(New)</span></a></li>
-//                       <li><a href="index-6.html">Travel style 6 <span class="fw-bold pink">(New)</span></a></li>
-//                       <li><a href="index-4.html">Travel Search</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li>
-//                         <a href="#">Destination</a>
-//                         <ul>
-//                           <li>
-//                             <a href="#">Grid View</a>
-//                             <ul>
-//                               <li><a href="destination-2col.html">Grid View 2 Col</a></li>
-//                               <li><a href="destination-3col.html">Grid View 3 Col</a></li>
-//                               <li><a href="destination-4col.html">Grid View 4 Col</a></li>
-//                               <li><a href="destination-sidebar.html">Grid with sidebar</a></li>
-//                             </ul>
-//                           </li>
-//                           <li>
-//                             <a href="#">List View</a>
-//                             <ul>
-//                               <li><a href="destination-fullwidth.html">List no sidebar</a></li>
-//                               <li><a href="destination-list-sidebar.html">List with sidebar</a></li>
-//                             </ul>
-//                           </li>
-//                         </ul>
-//                       </li>
-//                       <li>
-//                         <a href="tour-detail.html">Detail Default</a>
-//                         <ul>
-//                           <li><a href="tour-detail.html">Detail Default</a></li>
-//                           <li><a href="detail-tabs.html">Detail Tabs</a></li>
-//                         </ul>
-//                       </li>
-//                       <li>
-//                         <a href="booking.html">Booking & Payment</a>
-//                         <ul>
-//                           <li><a href="booking.html">Booking Page</a></li>
-//                           <li><a href="booking-confirmation.html">Booking Confirmation</a></li>
-//                           <li><a href="payment.html">Payment Page</a></li>
-//                         </ul>
-//                       </li>
-//                       <li><a href="price-list.html">Price List</a></li>
-//                       <li><a href="error.html">Error Page</a></li>
-//                       <li><a href="aboutus.html">About Page</a></li>
-//                       <li><a href="contactus.html">Contact Us</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="hotel.html">Hotel <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="hotel.html">Hotel Homepage</a></li>
-//                       <li><a href="grid-view.html">Grid View</a></li>
-//                       <li><a href="list-view.html">List View</a></li>
-//                       <li><a href="hotel-detail.html">Detail Page</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="flight.html">Flights<i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="flight.html">Flight Homepage</a></li>
-//                       <li><a href="flight-grid-view.html">Grid View</a></li>
-//                       <li><a href="flight-list-view.html">List View</a></li>
-//                       <li><a href="flight-detail.html">Detail Page</a></li>
-//                       <li><a href="flight-booking.html">Booking</a></li>
-//                       <li><a href="flight-confirm.html">Thank You</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#"><i class="fa fa-star"></i> Cars<i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="car-grid-view.html">Car Grid View</a></li>
-//                       <li><a href="car-list-view.html">Car List View</a></li>
-//                       <li><a href="car-detail.html">Car Detail Page</a></li>
-//                       <li><a href="car-booking.html">Payment</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#"><i class="fa fa-star"></i> Cruise<i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="cruise-grid-view.html">Cruise Grid View</a></li>
-//                       <li><a href="cruise-list-view.html">Cruise List View</a></li>
-//                       <li><a href="cruise-detail.html">Cruise Detail Page</a></li>
-//                       <li><a href="cruise-booking.html">Payment</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#">Dashboard <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="dashboard.html">Dashboard</a></li>
-//                       <li><a href="dashboard-my-profile.html">Dashboard Profile</a></li>
-//                       <li><a href="dashboard-booking.html">Dashboard Bookings</a></li>
-//                       <li><a href="dashboard-history.html">Dashboard History</a></li>
-//                       <li><a href="dashboard-list.html">Dashboard Listing</a></li>
-//                       <li><a href="dashboard-addtour.html">Dashboard Add Tour</a></li>
-//                       <li><a href="dashboard-reviews.html">Dashboard Reviews</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#">Shop <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="shop.html">Shop List</a></li>
-//                       <li><a href="shop-detail.html">Shop Detail</a></li>
-//                       <li><a href="cart.html">Cart</a></li>
-//                       <li><a href="checkout.html">Checkout</a></li>
-//                       <li><a href="login.html">Login Page</a></li>
-//                       <li><a href="forgot-password.html">Forgot Password</a></li>
-//                     </ul>
-//                   </li>
-//                   <li>
-//                     <a href="#">Blog <i class="fa fa-angle-down"></i></a>
-//                     <ul>
-//                       <li><a href="blog-list.html">Blog Right Sidebar</a></li>
-//                       <li><a href="blog-list-1.html">Blog Left Sidebar</a></li>
-//                       <li><a href="blog-list-2.html">Blog Fullwidth</a></li>
-//                       <li><a href="blog-list-3.html">Blog List</a></li>
-//                       <li><a href="blog-grid.html">Blog Grid</a></li>
-//                       <li><a href="blog-detail.html">Blog Detail Right Sidebar</a></li>
-//                       <li><a href="blog-detail-fw.html">Blog Detail Fullwidth</a></li>
-//                     </ul>
-//                   </li>
-//                 </ul>
-//               </div>
-//               <div id="slicknav-mobile"></div>
-//             </nav>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
+    </div>
+    </div>
+  )
+}
 
-//     </header> 
-//     </>
-//   )
-// }
-
-// export default FlightHeader
-// >>>>>>> 8bbd7760c34560584f9616754368a3d645d396e6
+export default FlightHeader
