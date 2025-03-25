@@ -42,7 +42,7 @@ const FlightFooter = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4"> 
                         <div>
                             <h5 className="mb-2 text-white">Subscribe to Keep Updated</h5>
                             <div className="footer-input">
@@ -89,19 +89,19 @@ const FlightFooter = () => {
                                     <a href="about-us" className="text-decoration-none">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="" className="text-decoration-none" className="text-decoration-none">Careers</a>
+                                    <a href="" className="text-decoration-none" >Careers</a>
                                 </li>
                                 <li>
                                     <a href="blog-grid" className="text-decoration-none">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="" className="text-decoration-none" className="text-decoration-none">Affiliate Program</a>
+                                    <a href="" className="text-decoration-none" >Affiliate Program</a>
                                 </li>
                                 <li>
                                     <a href="add-tour" className="text-decoration-none">Add Your Listing</a>
                                 </li>
                                 <li>
-                                    <a href="" className="text-decoration-none" className="text-decoration-none">Our Partners</a>
+                                    <a href="" className="text-decoration-none" >Our Partners</a>
                                 </li>
                             </ul>
                         </div>
