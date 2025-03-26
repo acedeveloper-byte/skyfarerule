@@ -379,7 +379,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-01.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">American Airline</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark">American Airline</a></h6>
                                 <p class="fs-14">216 Flights</p>
                             </div>
                         </div>
@@ -390,7 +390,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-02.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">Delta Airlines</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark">Delta Airlines</a></h6>
                                 <p class="fs-14">569 Flights</p>
                             </div>
                         </div>
@@ -401,7 +401,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-03.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">Emirates</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark">Emirates</a></h6>
                                 <p class="fs-14">129 Flights</p>
                             </div>
                         </div>
@@ -412,7 +412,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-04.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">Air France</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark">Air France</a></h6>
                                 <p class="fs-14">600 Flights</p>
                             </div>
                         </div>
@@ -423,7 +423,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-05.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">Qatar Airways</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark"> Qatar Airways</a></h6>
                                 <p class="fs-14">200 Flights</p>
                             </div>
                         </div>
@@ -434,7 +434,7 @@ const FlightSearch = () => {
                                 <img src="/img/flight/flight-company-06.svg" class="rounded-circle" alt="img" />
                             </a>
                             <div class="ms-2">
-                                <h6 class="fs-16 fw-medium"><a href="flight-grid">Air India</a></h6>
+                                <h6 class="fs-16 fw-medium"><a href="flight-grid" className="text-decoration-none text-dark">Air India</a></h6>
                                 <p class="fs-14">180 Flights</p>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ const FlightHeader = () => {
             <div className="container">
                 <div className="d-flex align-items-center justify-content-between flex-wrap">
                     <div className="d-flex align-items-center flex-wrap">
-                        <p className="d-flex align-items-center fs-14 mb-2 me-3 "><i className="isax isax-call5 me-2"></i>Toll Free : +1 56565 56594</p>
+                        <p className="d-flex align-items-center fs-14 mb-2 me-3 "><i className="isax isax-call5 me-2"></i>Toll Free : +1 (855) 838 5939</p>
                         <p className="mb-2 d-flex align-items-center fs-14"><i className="isax isax-message-text-15 me-2"></i>Email : <a href="" className="text-decoration-none  __cf_email__"  data-cfemail="cea7a0a8a18eabb6afa3bea2abe0ada1a3">contact@skyfarerules.com</a></p>
                     </div>
                     <div className="navbar-logo mb-2">
@@ -43,7 +43,7 @@ const FlightHeader = () => {
                             </a>
                         </div>
                         <div>
-                            <a href=""  className="text-white btn btn-dark w-100 mb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#login-modal">Sign In</a>
+                            <a href="tel: +1 (855) 838 5939"  className="text-white btn btn-dark w-100 mb-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#login-modal">+1 (855) 838 5939</a>
                         </div>
                     </div>
                 </div>
@@ -148,6 +148,33 @@ const FlightHeader = () => {
                                     </ul> */}
                                 </li>
                                 <li className="has-submenu mega-innermenu">
+                                    <a href="/cruise" className="text-decoration-none">Cruise<i className="fa-solid fa-angle-down"></i></a>
+                                    {/* <ul className="submenu mega-submenu">
+                                        <li>
+                                            <div className="megamenu-wrapper">
+                                                <div className="row">
+                                                    <div className="col-lg-6">
+                                                        <h6>Cruise Bookings</h6>
+                                                        <ul>
+                                                            <li><a href="cruise-grid">Cruise Grid</a></li>
+                                                            <li><a href="cruise-list">Cruise List</a></li>
+                                                            <li><a href="cruise-map">Cruise Map</a></li>
+                                                            <li><a href="cruise-details">Cruise Details</a></li>
+                                                            <li><a href="cruise-booking-confirmation">Cruise Booking</a></li>
+                                                            <li><a href="add-cruise">Add Cruise</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div className="col-lg-6">
+                                                        <div className="menu-img">
+                                                            <img src="/img/menu/cruise.jpg" alt="img" className="img-fluid" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> */}
+                                </li>
+                                <li className="has-submenu mega-innermenu">
                                     <a href="" className="text-decoration-none">Hotel<i className="fa-solid fa-angle-down"></i></a>
                                     {/* <ul className="submenu mega-submenu">
                                         <li>
@@ -201,33 +228,7 @@ const FlightHeader = () => {
                                         </li>
                                     </ul> */}
                                 </li>
-                                <li className="has-submenu mega-innermenu">
-                                    <a href="" className="text-decoration-none">Cruise<i className="fa-solid fa-angle-down"></i></a>
-                                    {/* <ul className="submenu mega-submenu">
-                                        <li>
-                                            <div className="megamenu-wrapper">
-                                                <div className="row">
-                                                    <div className="col-lg-6">
-                                                        <h6>Cruise Bookings</h6>
-                                                        <ul>
-                                                            <li><a href="cruise-grid">Cruise Grid</a></li>
-                                                            <li><a href="cruise-list">Cruise List</a></li>
-                                                            <li><a href="cruise-map">Cruise Map</a></li>
-                                                            <li><a href="cruise-details">Cruise Details</a></li>
-                                                            <li><a href="cruise-booking-confirmation">Cruise Booking</a></li>
-                                                            <li><a href="add-cruise">Add Cruise</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="col-lg-6">
-                                                        <div className="menu-img">
-                                                            <img src="/img/menu/cruise.jpg" alt="img" className="img-fluid" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul> */}
-                                </li>
+                                
                                 {/* <li className="has-submenu mega-innermenu">
                                     <a href="" className="text-decoration-none">Tour<i className="fa-solid fa-angle-down"></i></a>
                                     <ul className="submenu mega-submenu">
