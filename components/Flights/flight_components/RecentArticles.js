@@ -29,7 +29,7 @@ const RecentArticles = () => {
                             <span className="badge bg-primary">Booking</span>
                         </div>
                         <div className="card-body">
-                            <h5 className="mb-2"><a href="blog-details" className="text-decoration-none text-dark fw-bold">It empowers designers to swiftly created</a></h5>
+                            <h5 className="mb-2 fw-bold"><a href="blog-details" className="text-decoration-none text-dark ">It empowers designers to swiftly created</a></h5>
                             <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</p>
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="d-flex align-items-center">

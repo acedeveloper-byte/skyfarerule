@@ -15,7 +15,7 @@ const destinations = [
 const FlightDestination = () => {
   return (
     <div>
-      <section className="section place-section">
+      <section className="section place-section " >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-10 text-center">

@@ -52,7 +52,7 @@ const SearchEngine = () => {
                                                 <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="form-check d-flex align-items-center me-3 mb-2">
-                                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="oneway" value="oneway" checked />
+                                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="oneway" defaultChecked value="oneway" checked />
                                                             <label class="form-check-label fs-14 ms-2" for="oneway">
                                                                 Oneway
                                                             </label>

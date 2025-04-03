@@ -43,7 +43,7 @@ const FlightHeader = () => {
                             <ul className="main-nav d-flex justify-content-center gap-4 ">
                                 <li><a href="/" className="text-decoration-none text-white ">Home</a></li>
                                 <li><a href="/about-us" className="text-decoration-none text-white ">About Us</a></li>
-                                <li><a href="/flight" className="text-decoration-none text-white ">Blog</a></li>
+                                <li><a href="/blog" className="text-decoration-none text-white ">Blog</a></li>
                                 <li><a href="/cruise" className="text-decoration-none text-white ">Contact Us</a></li>
                                 <li><a href="/hotel" className="text-decoration-none text-white ">Terms & Conditions</a></li>
                             </ul>

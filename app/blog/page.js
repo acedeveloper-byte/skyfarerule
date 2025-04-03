@@ -9,615 +9,127 @@ const page = () => {
     <div style={{ overflow: "visible" }}>
       <FlightHeader />
 
-      {/* <!-- Breadcrumb --> */}
-      <section class="breadcrumb-outer text-center">
+    <div class="breadcrumb-bar breadcrumb-bg-02 text-center">
         <div class="container">
-          <div class="breadcrumb-content">
-            <h2>Blog List View</h2>
-            <nav aria-label="breadcrumb">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                  <a href="#">Blog</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Blog List View
-                </li>
-              </ul>
-            </nav>
-          </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <h2 class="breadcrumb-title mb-2">Blog </h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="/"><i class="isax isax-home5"></i></a></li>
+                            <li class="breadcrumb-item">Home</li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="section-overlay"></div>
-      </section>
-      {/* <!-- BreadCrumb Ends --> */}
+    </div>
 
-      {/* <!-- Listing --> */}
-      <section class="blog-list grid-list">
+
+
+    <div class="content">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="blog-wrapper">
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
+            <div class="row justify-content-center">
+
+            
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-item mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="" class="blog-img">
+                            <img src="/img/blog/blog-01.jpg" alt="img" />
+                        </a>
+                        <span class="badge  fs-13 fw-medium" style={{background: 'color: #6D3E97'}}>Travel</span>
+                        <div class="blog-info text-center">
+                            <div class="d-inline-flex align-items-center justify-content-center">
+                                <div class="d-inline-flex align-items-center border-end pe-3 me-3 mb-2">
+                                    <a href="" class="d-flex align-items-center">
+                                        <span class="avatar avatar-sm me-2">
+											<img src="/img/users/user-01.jpg" class="rounded-circle border border-white text-decoration-none" alt="img" />
+										</span>
+                                        <p className="">Bryan Bradfield</p>
+                                    </a>
+                                </div>
+                                <p class="text-white mb-2"><i class="isax isax-calendar-2 me-2"></i>14 May 2025</p>
+                            </div>
+                            <h5><a href="" className="text-decoration-none fs-5">Top 10 Hidden Gems places in Central Europe in 2025</a></h5>
                         </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html"
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid5.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
+              
+
+            
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-item mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="" class="blog-img">
+                            <img src="/img/blog/blog-02.jpg" alt="img" />
+                        </a>
+                        <span class="badge  fs-13 fw-medium">Guide</span>
+                        <div class="blog-info text-center">
+                            <div class="d-inline-flex align-items-center justify-content-center">
+                                <div class="d-inline-flex align-items-center border-end pe-3 me-3 mb-2">
+                                    <a href="" class="d-flex align-items-center">
+                                        <span class="avatar avatar-sm me-2">
+											<img src="/img/users/user-02.jpg" class="rounded-circle border border-white" alt="img" />
+										</span>
+                                        <p className="text-decoration-none fs-5"> Michell West</p>
+                                    </a>
+                                </div>
+                                <p class="text-white mb-2"><i class="isax isax-calendar-2 me-2"></i>12 May 2025</p>
+                            </div>
+                            <h5><a href="" className="text-decoration-none fs-5">Exploring the World: Your Ultimate Dream Tour Itinerary</a></h5>
                         </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html"
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid2.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
+              
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-item mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="" class="blog-img">
+                            <img src="/img/blog/blog-02.jpg" alt="img" />
+                        </a>
+                        <span class="badge  fs-13 fw-medium">Guide</span>
+                        <div class="blog-info text-center">
+                            <div class="d-inline-flex align-items-center justify-content-center">
+                                <div class="d-inline-flex align-items-center border-end pe-3 me-3 mb-2">
+                                    <a href="" class="d-flex align-items-center">
+                                        <span class="avatar avatar-sm me-2">
+											<img src="/img/users/user-02.jpg" class="rounded-circle border border-white" alt="img" />
+										</span>
+                                        <p>Michell West</p>
+                                    </a>
+                                </div>
+                                <p class="text-white mb-2"><i class="isax isax-calendar-2 me-2"></i>12 May 2025</p>
+                            </div>
+                            <h5><a href="" className="text-decoration-none fs-5">Exploring the World: Your Ultimate Dream Tour Itinerary</a></h5>
                         </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html "
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid3.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
-                        </div>
-                        <h3>
-                          <a href="blog-detail.html text-decoration-auto">
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid4.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
-                        </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html"
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid1.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
-                        </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html"
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog-item grid-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-5">
-                      <div class="blog-image">
-                        <img src="images/grid.jpg" alt="Image" />
-                      </div>
-                    </div>
-                    <div class="col-lg-7">
-                      <div class="blog-content">
-                        <div class="blog-date">
-                          <p>
-                            <i class="fa fa-clock-o"></i> Posted On : 12 May
-                          </p>
-                        </div>
-                        <h3>
-                          <a
-                            href="blog-detail.html"
-                            class="text-decoration-none"
-                          >
-                            What happened during my first trip alone
-                          </a>
-                        </h3>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.Duis aute irure dolor in
-                          reprehenderit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="pagination-content">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#">
-                        <i
-                          class="fa fa-angle-double-left"
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-                    <li class="active">
-                      <a href="#" class="text-decoration-none">
-                        1
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">
-                        2
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">
-                        3
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">
-                        4
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i
-                          class="fa fa-angle-double-right"
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="sidebar-sticky" class="col-lg-4">
-              <aside class="detail-sidebar sidebar-wrapper">
-                <div class="item-sidebar">
-                  <div class="sidebar-item sidebar-item-dark">
-                    <div class="detail-title">
-                      <h3>Search</h3>
-                    </div>
-                    <form>
-                      <div class="row">
-                        <div class="form-group col-lg-12">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="Name"
-                            placeholder="Enter the place you want to search"
-                          />
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="comment-btn">
-                            <a href="#" class="btn-blue btn-red">
-                              Search Now
+
+              
+                <nav class="pagination-nav">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
                             </a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="post-categories sidebar-item">
-                    <div class="detail-title">
-                      <h3>Categories</h3>
-                    </div>
-                    <ul>
-                      <li>
-                        <a href="#">Science</a>
-                      </li>
-                      <li>
-                        <a href="#">Management</a>
-                      </li>
-                      <li>
-                        <a href="#">Humanities</a>
-                      </li>
-                      <li>
-                        <a href="#">Arts</a>
-                      </li>
-                      <li>
-                        <a href="#">Biology</a>
-                      </li>
-                      <li>
-                        <a href="#">Technology</a>
-                      </li>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="">1</a></li>
+                        <li class="page-item"><a class="page-link" href="">2</a></li>
+                        <li class="page-item"><a class="page-link" href="">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="">4</a></li>
+                        <li class="page-item"><a class="page-link" href="">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
                     </ul>
-                  </div>
-                  <div class="recent-post clearfix sidebar-item">
-                    <div class="detail-title">
-                      <h3>Recent Posts</h3>
-                    </div>
-                    <div class="recent-item">
-                      <div class="recent-image">
-                        <img src="images/profile1.jpg" alt="Image" />
-                      </div>
-                      <div class="recent-content">
-                        <a href="#" class="tag tag-blue">
-                          #News
-                        </a>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            10 Tips you should follow
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="recent-item">
-                      <div class="recent-image">
-                        <img src="images/recent2.jpg" alt="Image" />
-                      </div>
-                      <div class="recent-content">
-                        <a href="#" class="tag tag-gold">
-                          #News
-                        </a>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            Must have gadgets in life
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="recent-item">
-                      <div class="recent-image">
-                        <img src="images/recent1.jpg" alt="Image" />
-                      </div>
-                      <div class="recent-content">
-                        <a href="#" class="tag tag-green">
-                          #Health
-                        </a>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            Selena, The talk of town
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="recent-item">
-                      <div class="recent-image">
-                        <img src="images/recent2.jpg" alt="Image" />
-                      </div>
-                      <div class="recent-content">
-                        <a href="#" class="tag tag-blue">
-                          #News
-                        </a>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            Why Zlatan left United?
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="ad1 sidebar-item">
-                    <div class="detail-title">
-                      <h3>Popular Tags</h3>
-                    </div>
-                    <div class="popular-tag-content">
-                      <ul>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Flights
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Trek
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Travelling
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Cruises
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Sale
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Hotels
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" class="text-decoration-none">
-                            Restaurants
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="popular-post sidebar-item">
-                    <div class="detail-title">
-                      <h3>Popular Posts</h3>
-                    </div>
-                    <div class="popular-item">
-                      <div class="popular-content">
-                        <span class="item-no">01</span>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            7 reasons Hollywood doesn’t make romantic comedies
-                            anymore
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-comment-o"></i> 3 comments
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="popular-item">
-                      <div class="popular-content">
-                        <span class="item-no">02</span>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            Watch: the 3 best performances of the 2018 VMAs
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-comment-o"></i> 3 comments
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="popular-item">
-                      <div class="popular-content">
-                        <span class="item-no">03</span>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            Why conservatives love to hate Alexandria?
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-comment-o"></i> 3 comments
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="popular-item">
-                      <div class="popular-content">
-                        <span class="item-no">04</span>
-                        <h4>
-                          <a href="#" class="text-decoration-none">
-                            10 Tips you should follow before eating street foods
-                          </a>
-                        </h4>
-                        <div class="author-detail">
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-user-o"></i> John Doe
-                            </a>
-                          </p>
-                          <p>
-                            <i class="fa fa-clock-o"></i> 12 May
-                          </p>
-                          <p>
-                            <a href="#">
-                              <i class="fa fa-comment-o"></i> 3 comments
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </aside>
+                </nav>
+             
             </div>
-          </div>
         </div>
-      </section>
-      {/* <!-- Listing Ends --> */}
+    </div>
+   
 
       <FlightFooter />
     </div>

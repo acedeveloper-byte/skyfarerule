@@ -19440,3 +19440,55 @@ table.table.dataTable > thead > tr th {
   background: #444;
 }
 
+
+.blog-item .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  background: #6D3E97;
+}
+
+
+/* navbar css  */
+/* Hide the navigation on mobile by default */
+.main-nav {
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* Show the hamburger menu on mobile */
+  .hamburger-menu {
+      display: block;
+  }
+
+  .main-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+  }
+
+  .main-nav.mobile-open {
+      display: flex;
+  }
+
+  .main-nav li {
+      margin: 10px 0;
+  }
+
+  .main-nav a {
+      color: white;
+      font-size: 18px;
+  }
+}
+

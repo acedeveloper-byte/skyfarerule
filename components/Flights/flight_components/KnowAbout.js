@@ -12,7 +12,7 @@ const KnowAbout = () => {
                 <div className="col-lg-5">
                     <div>
                         <div className="section-right-img-two wow fadeInUp" data-wow-delay="1.5">
-                            <img src="/img/section-img-02.png" alt="Img" />
+                            <img src="/images/about/about-us.png" alt="Img" />
                             <div className="card review-rate-top border-0 mb-0">
                                 <div className="card-body d-flex align-items-center">
                                     <div className="avatar-list-stacked avatar-group-md me-2">

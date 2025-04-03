@@ -8,8 +8,8 @@ const ServicesWork = () => {
             <div className="row align-items-center">
                 <div className="col-xxl-3 col-lg-4">
                     <div className="section-header-six mb-0 wow fadeInUp" data-wow-delay="1.5">
-                        <span className="badge badge-soft-primary rounded-pill mb-1">How it Works</span>
-                        <h2>Here’s a breakdown of how our services work<span className="text-primary">.</span></h2>
+                        <span className="badge badge-soft-primary rounded-pill mb-1">Call Us Today!</span>
+                        <h2>Here’s a breakdown of how our services work.<span className="text-primary"></span></h2>
                     </div>
                 </div>
                 <div className="col-xxl-9 col-lg-8">
