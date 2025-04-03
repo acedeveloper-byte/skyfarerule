@@ -52,7 +52,6 @@ const CruiseFooter = () => {
                                 <span className="fw-medium">Contact Us:</span><p><a className="text-decoration-none  text-dark" href="tel: +1-855-550-0986"> <FontAwesomeIcon icon={faPhoneVolume} className="text-blue-500" /> +1-855-550-0986</a></p>
 
                             </div>
-                            {/* Single column for all the footer content */}
                             {footerContent.map((section, index) => (
                                 <div className="col-md-2">
                                     <div className="footer-widget" key={index}>
