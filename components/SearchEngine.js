@@ -1,4 +1,4 @@
-"use client ";
+"use client";
 import React from "react";
 
 const SearchEngine = () => {
@@ -17,30 +17,17 @@ const SearchEngine = () => {
                         <div class="banner-form-tab-six">
                             <ul class="nav">
                                 <li>
-                                    <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#flight">
-                                        <i class="fa-solid fa-plane-up me-2"></i>Flights
+                                    <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#flight">
+                                        <i class="fa-solid fa-plane-up me-2"></i>Round Trip
                                     </a>
                                 </li>
                                 <li>
                                     <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#Hotels">
-                                        <i class="fa-solid fa-hotel me-2"></i>Hotels
+                                        <i class="fa-solid fa-hotel me-2"></i>One Way
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#Cars">
-                                        <i class="fa-solid fa-car me-2"></i>Cars
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#Cruise">
-                                        <i class="fa-solid fa-ship me-2"></i>Cruise
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#Tour">
-                                        <i class="fa-solid fa-camera me-2"></i>Tour
-                                    </a>
-                                </li>
+                             
+                               
                             </ul>
                         </div>
                         <div class="banner-form card mb-0">

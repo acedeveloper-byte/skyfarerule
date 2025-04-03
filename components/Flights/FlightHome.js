@@ -6,12 +6,14 @@ import Testimonial from "./flight_components/Testimonial";
 import FlightDestination from "./flight_components/FlightDestination";
 import PopularTours from "./flight_components/PopularTours";
 import FlightDisclaimer from "./flight_components/FlightDisclaimer";
+import BenefitCards from "./flight_components/BenefitCards";
 
 const FlightHome = () => {
   return (
     <>
 
   {/* <PlaceCategoery/> */}
+  <BenefitCards/>
   <FlightDestination/>
 <ServicesWork/>
 
