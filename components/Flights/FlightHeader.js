@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BsFilterLeft } from "react-icons/bs";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
@@ -10,7 +10,8 @@ import {
 
 import Image from "next/image";
 
-const FlightHeader = () => {
+const FlightHeader = () => {  
+    const [isMobile, setIsMobile] = useState(false);
     const [isPhoneVisible, setPhoneVisible] = useState(true); // Default state is true (visible)
     const [isNavVisible, setNavVisible] = useState(true); // State for toggling navigation visibility
 
@@ -23,7 +24,22 @@ const FlightHeader = () => {
     const toggleNavVisibility = () => {
         setNavVisible(prevState => !prevState);
     };
-
+    useEffect(() => {
+        const checkIfMobile = () => {
+          setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+        };
+    
+        // Check on initial load
+        checkIfMobile();
+    
+        // Add event listener for resizing
+        window.addEventListener('resize', checkIfMobile);
+    
+        // Cleanup on unmount
+        return () => {
+          window.removeEventListener('resize', checkIfMobile);
+        };
+      }, []);
     return (
         <div>
             <div className="main-header main-header-four">
@@ -55,10 +71,9 @@ const FlightHeader = () => {
                 <header className="header-six">
                     <div className="container d-flex align-items-center justify-content-between mob-view">
                         {/* Hamburger Menu Button */}
-
-                            <BsFilterLeft  className="text-dark hamburger" onClick={toggleNavVisibility}  />
-                           
-                        <nav style={{ marginTop: '12px', display :  `${isNavVisible  ?  "none" :"flex" }` }}>
+                        {isMobile   &&  <BsFilterLeft  className="text-dark hamburger" onClick={toggleNavVisibility}  />}
+                          {/* <BsFilterLeft  className="text-dark hamburger" onClick={toggleNavVisibility}  /> */}
+                        <nav style={{ marginTop: '12px', display :  `${isMobile ?  isNavVisible  ?  "none" :"flex" :  "flex" }` }}>
                             <ul className={`main-nav d-flex justify-content-center gap-4 ${isNavVisible ? 'show-nav' : 'hide-nav'}`}>
                                 <li><a href="/" className="text-decoration-none text-white ">Home</a></li>
                                 <li><a href="/about-us" className="text-decoration-none text-white ">About Us</a></li>

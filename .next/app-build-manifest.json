@@ -12,42 +12,6 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/discounted-cruises/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/discounted-cruises/layout.css",
-      "static/chunks/app/discounted-cruises/layout.js"
-    ],
-    "/discounted-cruises/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/discounted-cruises/page.css",
-      "static/chunks/app/discounted-cruises/page.js"
-    ],
-    "/about-us/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-us/layout.css",
-      "static/chunks/app/about-us/layout.js"
-    ],
-    "/about-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-us/page.css",
-      "static/chunks/app/about-us/page.js"
-    ],
-    "/blog/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/blog/layout.css",
-      "static/chunks/app/blog/layout.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/blog/page.css",
-      "static/chunks/app/blog/page.js"
-    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
