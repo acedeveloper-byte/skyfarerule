@@ -1,4 +1,44 @@
 import React from 'react'
+import Image from "next/image"; 
+
+const cruiseData = [
+    {
+        name: "Luxury Cruise",
+        image: "/img/cruise/cruise-04.jpg",
+        cruisesCount: 216,
+        link: "cruise-grid"
+    },
+    {
+        name: "Adventure Cruise",
+        image: "/img/cruise/cruise-02.jpg",
+        cruisesCount: 569,
+        link: "cruise-grid"
+    },
+    {
+        name: "River Cruise",
+        image: "/img/cruise/cruise-03.jpg",
+        cruisesCount: 129,
+        link: "cruise-grid"
+    },
+    {
+        name: "Family Cruise",
+        image: "/img/cruise/cruise-04.jpg",
+        cruisesCount: 150,
+        link: "cruise-grid"
+    },
+    {
+        name: "Sailing Cruises",
+        image: "/img/cruise/cruise-05.jpg",
+        cruisesCount: 200,
+        link: "cruise-grid"
+    },
+    {
+        name: "World Cruises",
+        image: "/img/cruise/cruise-06.jpg",
+        cruisesCount: 320,
+        link: "cruise-grid"
+    }
+];
 
 const CruiseSearch = () => {
   return (
@@ -22,49 +62,18 @@ const CruiseSearch = () => {
                                                 <span className="input-group-text px-2 border-start-0"><i className="isax isax-search-normal"></i></span>
                                             </div>
                                         </div>
-                                        <ul>
-                                            <li className="border-bottom">
-                                                <a className="dropdown-item" href="javascript:void(0);">
-                                                    <h6 className="fs-16 fw-medium">USA</h6>
-                                                    <p>2000 Properties</p>
-                                                </a>
-                                            </li>
-                                            <li className="border-bottom">
-                                                <a className="dropdown-item" href="javascript:void(0);">
-                                                    <h6 className="fs-16 fw-medium">Japan</h6>
-                                                    <p>3000 Properties</p>
-                                                </a>
-                                            </li>
-                                            <li className="border-bottom">
-                                                <a className="dropdown-item" href="javascript:void(0);">
-                                                    <h6 className="fs-16 fw-medium">Singapore</h6>
-                                                    <p>8000 Properties</p>
-                                                </a>
-                                            </li>
-                                            <li className="border-bottom">
-                                                <a className="dropdown-item" href="javascript:void(0);">
-                                                    <h6 className="fs-16 fw-medium">Russia</h6>
-                                                    <p>8000 Properties</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a className="dropdown-item" href="javascript:void(0);">
-                                                    <h6 className="fs-16 fw-medium">Germany</h6>
-                                                    <p>2000 Properties</p>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                     
                                     </div>
                                 </div>
                                 <div className="form-item">
                                     <label className="form-label fs-14 text-default mb-1">Check In</label>
                                     <input type="text" className="form-control datetimepicker" value="21-10-2025" />
-                                    <p className="fs-12 mb-0">Monday</p>
+                                   
                                 </div>
                                 <div className="form-item">
                                     <label className="form-label fs-14 text-default mb-1">Check Out</label>
                                     <input type="text" className="form-control datetimepicker" value="21-10-2025" />
-                                    <p className="fs-12 mb-0">Monday</p>
+                                   
                                 </div>
                                 <div className="form-item dropdown">
                                     <div data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="menu">
@@ -217,7 +226,7 @@ const CruiseSearch = () => {
                                             </div>
                                         </div>
                                         <div className="d-flex justify-content-end">
-                                            <a href="javascript:void(0);" className="btn btn-light btn-sm me-2">Cancel</a>
+                                            <a href="" className="btn btn-light btn-sm me-2">Cancel</a>
                                             <button type="submit" className="btn btn-primary btn-sm">Apply</button>
                                         </div>
                                     </div>
@@ -230,80 +239,37 @@ const CruiseSearch = () => {
             </div>
         
 
-
             <div className="mb-2">
-                <div className="mb-3">
-                    <h5 className="mb-2">Choose type of Cruise you are interested</h5>
-                </div>
-                <div className="row">
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-04.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">Luxury Cruise</a></h6>
-                                <p className="fs-14">216 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-02.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">Adventure Cruise</a></h6>
-                                <p className="fs-14">569 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-03.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">River Cruise</a></h6>
-                                <p className="fs-14">129 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-04.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">Family Cruise</a></h6>
-                                <p className="fs-14">150 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-05.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">Sailing Cruises</a></h6>
-                                <p className="fs-14">200 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div className="d-flex align-items-center hotel-type-item mb-3">
-                            <a href="cruise-grid" className="avatar avatar-lg">
-                                <img src="/img/cruise/cruise-06.jpg" className="rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                                <h6 className="fs-16 fw-medium"><a href="cruise-grid" className="text-decoration-none text-dark">World Cruises</a></h6>
-                                <p className="fs-14">320 Cruises</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="mb-3">
+                <h5 className="mb-2">Choose type of Cruise you are interested</h5>
             </div>
+            <div className="row">
+                {cruiseData.map((cruise, index) => (
+                    <div key={index} className="col-xxl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div className="d-flex align-items-center hotel-type-item mb-3">
+                            <a href={cruise.link} className="avatar avatar-lg">
+                                <Image
+                                    src={cruise.image}
+                                    className="rounded-circle"
+                                    alt={cruise.name}
+                                    width={150} // You can adjust the size accordingly
+                                    height={150} // You can adjust the size accordingly
+                                />
+                            </a>
+                            <div className="ms-2">
+                                <h6 className="fs-16 fw-medium">
+                                    <a href={cruise.link} className="text-decoration-none text-dark">
+                                        {cruise.name}
+                                    </a>
+                                </h6>
+                                <p className="fs-14">{cruise.cruisesCount} Cruises</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+           
     
     </div>
   )

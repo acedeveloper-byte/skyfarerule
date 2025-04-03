@@ -22413,6 +22413,8 @@ table.table.dataTable>thead>tr th {
   cursor: pointer;
 }
 
+
+
 @media (max-width: 768px) {
 
   /* Show the hamburger menu on mobile */
@@ -22450,9 +22452,13 @@ table.table.dataTable>thead>tr th {
 
   margin: 10px;
   font-size: 30px;
+  color: #000;
 }
 
 @media (max-width: 768px) {
+
+ 
+  
   .navbar-cust {
     display: inline-block;
   }
@@ -22478,7 +22484,6 @@ table.table.dataTable>thead>tr th {
     color: white;
   }
 
-  /* Toggling the display */
   .hide-nav {
     display: none;
   }
@@ -22487,3 +22492,14 @@ table.table.dataTable>thead>tr th {
     display: flex;
   }
 }
+
+
+
+
+
+ 
+
+
+
+
+

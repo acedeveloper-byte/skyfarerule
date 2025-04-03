@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BsFilterLeft } from "react-icons/bs";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
 
 import {
     faPhoneVolume, faLocationDot, faMoon, faSun, faHeart, faBars
@@ -43,8 +44,8 @@ const FlightHeader = () => {
 
                             <div>
                                 {/* Toggle Button for Phone Visibility */}
-                                <button onClick={togglePhoneVisibility} className="btn btn-dark mb-2">
-                                    <FontAwesomeIcon icon={faPhoneVolume} className="me-2" />
+                                <button onClick={togglePhoneVisibility} className="btn btn-dark mb-2 togle-button">
+                                <MdOutlinePhoneInTalk className="fs-4"/>
                                     {isPhoneVisible ? '+1 (855) 838 5939' : 'Show Phone Number'}
                                 </button>
                             </div>
@@ -55,13 +56,8 @@ const FlightHeader = () => {
                     <div className="container d-flex align-items-center justify-content-between mob-view">
                         {/* Hamburger Menu Button */}
 
-                            <BsFilterLeft  className="text-white hamburger" onClick={toggleNavVisibility}  />
-                            <div className="navbar-logo mb-2">
-                            <a href="/">
-                                <Image src="/logo/logo.webp" alt="Logo" width={150} height={50} />
-                            </a>
-                        </div>
-                        {/* Navigation Links */}
+                            <BsFilterLeft  className="text-dark hamburger" onClick={toggleNavVisibility}  />
+                           
                         <nav style={{ marginTop: '12px', display :  `${isNavVisible  ?  "none" :"flex" }` }}>
                             <ul className={`main-nav d-flex justify-content-center gap-4 ${isNavVisible ? 'show-nav' : 'hide-nav'}`}>
                                 <li><a href="/" className="text-decoration-none text-white ">Home</a></li>
