@@ -11,7 +11,7 @@ const SearchEngine = () => {
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="banner-content wow fadeInUp mb-4" data-wow-delay="0.3">
-                            <h1 class="text-white display-5 mb-2"> Get Unlimited Flight Deals!</h1>
+                            <h1 class="text-white display-5 mb-2 fw-bold"> Get Unlimited Flight Deals!</h1>
                             <p class="text-white">Find the latest deals and discounts to save extra on your next flight booking. Connect with  skyfarerules today to fly at low fares.</p>
                         </div>
                         <div class="banner-form-tab-six">

@@ -85,7 +85,7 @@ const Testimonial = () => {
                       <a href="#" className="avatar avatar-md flex-shrink-0">
                         <img src={testimonial.image} className="rounded-circle" alt={testimonial.name} />
                       </a>
-                      <div className="ms-2 d-flex align-items-center">
+                      <div className="ms-2 d-flex al gbbbbign-items-center">
                         <h6 className="  text-dark fw-bold">{testimonial.name}</h6>
                       </div>
                     </div>
