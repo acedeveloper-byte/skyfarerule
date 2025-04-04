@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume, faLocationDot, faFacebook, faXTwitter, faInstagram, faLinkedin, faPinterest } from "@fortawesome/free-solid-svg-icons";
+import { MdOutlinePhoneInTalk, MdAddLocationAlt } from "react-icons/md";
 
 
 const socialLinks = [
@@ -15,8 +16,9 @@ const footerSections = [
     {
         title: "Quick Links",
         links: [
-            { href: "", text: "About Us" },
-            { href: "", text: "Contact Us" },
+            { href: "/about-us", text: "About Us" },
+            { href: "contact-us", text: "Contact Us" },
+            { href: "/blog", text: "Blog" },
             { href: "privacy-policy", text: "Privacy Policy" },
             { href: "terms-conditions", text: "Terms and Conditions" },
             { href: "", text: "Pet Policy" },
@@ -25,14 +27,12 @@ const footerSections = [
         ],
     },
     {
-        title: "Destinations",
+        title: "Legal",
         links: [
-            { href: "", text: "Los Angeles" },
-            { href: "", text: "New York" },
-            { href: "", text: "Rome" },
-            { href: "", text: "Miami" },
-            { href: "", text: "Newyork" },
-            { href: "", text: "Santorini" },
+            { href: "", text: "Contact Us" },
+            { href: "privacy-policy", text: "Privacy Policy" },
+            { href: "terms-conditions", text: "Terms and Conditions" },
+           
         ],
     },
     {
@@ -90,7 +90,7 @@ const FlightFooter = () => {
                                     <div className="mb-4">
                                         <a href="index" className="d-inline-block mb-1">
                                             <img
-                                                src="https://www.skyfarerules.com/wp-content/uploads/2024/07/Skyfarerules-logo-1.png"
+                                                src="/logo/logo.webp"
                                                 alt="logo"
                                                 style={{
                                                     maxWidth: "78%",
@@ -104,8 +104,8 @@ const FlightFooter = () => {
                                             At Skyfarerules, we will help you make a flight booking to your destination within your budget. Book as soon as possible!
                                         </p>
 
-                                        <span className="text-white">Address:</span><p> <FontAwesomeIcon icon={faLocationDot} className="text-red-500" /> 7575 KIRBY DR APT 3403, HOUSTON, TX 77030</p>
-                                        <span className="text-white">Contact Us:</span><p><a className="text-decoration-none  " href="tel: +1 (855) 838-5939"> <FontAwesomeIcon icon={faPhoneVolume} className="text-blue-500" />  +1 (855) 838-5939</a></p>
+                                        <span className="text-white">Address:</span><p>    <MdAddLocationAlt className="fs-5"/> 7575 KIRBY DR APT 3403, HOUSTON, TX 77030</p>
+                                        <span className="text-white">Contact Us:</span><p><a className="text-decoration-none  " href="tel: +1 (855) 838-5939" style={{color: '#7D828C'}}> <MdOutlinePhoneInTalk className="fs-5"/>  +1 (855) 838-5939</a></p>
 
                                     </div>
                                 </div>

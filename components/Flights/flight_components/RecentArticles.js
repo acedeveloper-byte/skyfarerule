@@ -15,7 +15,7 @@ const RecentArticles = () => {
                 </div>
                 <div className="col-md-4">
                     <div className="text-end">
-                        <a href="blog-grid" className="btn btn-dark sec-head-btn">View All Blogs<i className="isax isax-arrow-right-3 ms-2"></i></a>
+                        <a href="blog" className="btn btn-dark sec-head-btn">View All Blogs<i className="isax isax-arrow-right-3 ms-2"></i></a>
                     </div>
                 </div>
             </div>
