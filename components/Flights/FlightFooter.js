@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume, faLocationDot, faFacebook, faXTwitter, faInstagram, faLinkedin, faPinterest } from "@fortawesome/free-solid-svg-icons";
 import { MdOutlinePhoneInTalk, MdAddLocationAlt } from "react-icons/md";
+import Link from "next/link";
+
 
 
 const socialLinks = [
@@ -16,22 +18,24 @@ const footerSections = [
     {
         title: "Quick Links",
         links: [
+            { href: "/", text: "Home" },
+
             { href: "/about-us", text: "About Us" },
             { href: "contact-us", text: "Contact Us" },
             { href: "/blog", text: "Blog" },
             { href: "privacy-policy", text: "Privacy Policy" },
-            { href: "terms-conditions", text: "Terms and Conditions" },
-            { href: "", text: "Pet Policy" },
-            { href: "", text: "Cancellation Policy" },
-            { href: "", text: "Articulous" },
+            { href: "termscondition", text: "Terms and Conditions" },
+            // { href: "", text: "Pet Policy" },
+            // { href: "", text: "Cancellation Policy" },
+            // { href: "", text: "Articulous" },
         ],
     },
     {
         title: "Legal",
         links: [
-            { href: "", text: "Contact Us" },
+            { href: "contact-us", text: "Contact Us" },
             { href: "privacy-policy", text: "Privacy Policy" },
-            { href: "terms-conditions", text: "Terms and Conditions" },
+            { href: "termscondition", text: "Terms and Conditions" },
            
         ],
     },
@@ -88,7 +92,7 @@ const FlightFooter = () => {
                             <div className="footer-widget">
                                 <div className="footer-about">
                                     <div className="mb-4">
-                                        <a href="index" className="d-inline-block mb-1">
+                                        <Link href="/" className="d-inline-block mb-1">
                                             <img
                                                 src="/logo/logo.webp"
                                                 alt="logo"
@@ -99,22 +103,22 @@ const FlightFooter = () => {
                                                     padding: "9px",
                                                 }}
                                             />
-                                        </a>
+                                        </Link>
                                         <p>
                                             At Skyfarerules, we will help you make a flight booking to your destination within your budget. Book as soon as possible!
                                         </p>
 
                                         <span className="text-white">Address:</span><p>    <MdAddLocationAlt className="fs-5"/> 7575 KIRBY DR APT 3403, HOUSTON, TX 77030</p>
-                                        <span className="text-white">Contact Us:</span><p><a className="text-decoration-none  " href="tel: +1 (855) 838-5939" style={{color: '#7D828C'}}> <MdOutlinePhoneInTalk className="fs-5"/>  +1 (855) 838-5939</a></p>
+                                        <span className="text-white">Contact Us:</span><p><Link className="text-decoration-none  " href="tel: +1 (855) 838-5939" style={{color: '#7D828C'}}> <MdOutlinePhoneInTalk className="fs-5"/>  +1 (855) 838-5939</Link></p>
 
                                     </div>
                                 </div>
                                 <ul className="social-icon">
                                     {socialLinks.map((link, index) => (
                                         <li key={index}>
-                                            <a href={link.href} className="text-decoration-none">
+                                            <Link href={link.href} className="text-decoration-none">
                                                 <FontAwesomeIcon icon={link.icon} className="text-primary" />
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -151,9 +155,9 @@ const FlightFooter = () => {
                                     <ul className="footer-menu">
                                         {section.links.map((link, linkIndex) => (
                                             <li key={linkIndex}>
-                                                <a href={link.href} className="text-decoration-none">
+                                                <Link href={link.href} className="text-decoration-none">
                                                     {link.text}
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -170,9 +174,9 @@ const FlightFooter = () => {
                         <div className="col-lg-5 mx-auto">
                             <p className="text-center">
                                 Copyright &copy; 2025. All Rights Reserved,{" "}
-                                <a href="/" className="text-primary fw-medium text-decoration-none text-white">
+                                <Link href="/" className="text-primary fw-medium text-decoration-none text-white">
                                     skyfarerules
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </div>
