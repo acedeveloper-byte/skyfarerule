@@ -12,7 +12,9 @@ const socialLinks = [
     { href: "#", icon: faInstagram },
     { href: "#", icon: faLinkedin },
     { href: "#", icon: faPinterest },
+
 ];
+
 
 const footerSections = [
     {
@@ -42,8 +44,6 @@ const footerSections = [
     {
         title: "Legal Links",
         links: [
-            { href: "privacy-policy", text: "Privacy Policy" },
-            { href: "terms-conditions", text: "Terms and Conditions" },
             { href: "", text: "Price Match Promise" },
             { href: "", text: "Cookie Policy" },
             { href: "", text: "  Cancellation & Refund" },
@@ -55,7 +55,7 @@ const footerSections = [
             { href: "", text: "   Post Ticketing Service Fees" },
             { href: "", text: " Reservation Desk" },
             { href: "", text: "     Flight Deals" },
-            { href: "", text: "      Discounted Cruises" },
+            { href: "discounted-cruises", text: " Discounted Cruises" },
 
         ],
     },

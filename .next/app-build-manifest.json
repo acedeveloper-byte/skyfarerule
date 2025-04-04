@@ -1,3 +1,22 @@
 {
-  "pages": {}
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/discounted-cruises/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/discounted-cruises/layout.css",
+      "static/chunks/app/discounted-cruises/layout.js"
+    ],
+    "/discounted-cruises/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/discounted-cruises/page.css",
+      "static/chunks/app/discounted-cruises/page.js"
+    ]
+  }
 }
