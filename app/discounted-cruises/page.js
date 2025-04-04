@@ -5,6 +5,7 @@ import FlightHeader from "@/components/Flights/FlightHeader";
 import CruiseFooter from '@/components/CruiseSection/CruiseFooter';
 import CruiseSearch from '@/components/CruiseSection/CruiseSearch';
 import CruiseFilter from '@/components/CruiseSection/CruiseFilter';
+import CruiseHeader from '@/components/CruiseSection/CruiseHeader';
 
 
 
@@ -12,7 +13,7 @@ import CruiseFilter from '@/components/CruiseSection/CruiseFilter';
 const page = () => {
   return (
     <>
-  <FlightHeader/>
+<CruiseHeader/>
     <div className="breadcrumb-bar breadcrumb-bg-06 text-center">
         <div className="container">
             <div className="row">

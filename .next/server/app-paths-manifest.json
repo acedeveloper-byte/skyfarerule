@@ -1,3 +1,4 @@
 {
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/discounted-cruises/page": "app/discounted-cruises/page.js"
 }
