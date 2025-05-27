@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { FaHome } from "react-icons/fa";
+import { FaArrowRight, FaHome } from "react-icons/fa";
 
 import FlightHeader from '@/components/Flights/FlightHeader';
 import FlightFooter from '@/components/Flights/FlightFooter';
@@ -26,7 +26,8 @@ const ContactPage = () => {
                     <Link href="/" className='text-white text-decoration-none mx-2'><FaHome /></Link>
                 
                   <li className="breadcrumb-item">Home</li>
-                  <li className="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                 <li className="text-white mx-2 " ><FaArrowRight /> Contact Us</li>
+               
                 </ol>
               </nav>
             </div>

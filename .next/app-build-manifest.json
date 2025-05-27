@@ -6,17 +6,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/blog/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/blog/layout.css",
       "static/chunks/app/blog/layout.js"
+    ],
+    "/blog/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/[slug]/page.js"
     ],
     "/blog/page": [
       "static/chunks/webpack.js",
@@ -24,15 +23,41 @@
       "static/css/app/blog/page.css",
       "static/chunks/app/blog/page.js"
     ],
-    "/blog/[slug]/page": [
+    "/contact-us/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/[slug]/page.js"
+      "static/css/app/contact-us/layout.css",
+      "static/chunks/app/contact-us/layout.js"
     ],
-    "/_not-found/page": [
+    "/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/contact-us/page.css",
+      "static/chunks/app/contact-us/page.js"
+    ],
+    "/termscondition/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/termscondition/layout.css",
+      "static/chunks/app/termscondition/layout.js"
+    ],
+    "/termscondition/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/termscondition/page.css",
+      "static/chunks/app/termscondition/page.js"
+    ],
+    "/privacy-policy/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/privacy-policy/layout.css",
+      "static/chunks/app/privacy-policy/layout.js"
+    ],
+    "/privacy-policy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/privacy-policy/page.css",
+      "static/chunks/app/privacy-policy/page.js"
     ]
   }
 }

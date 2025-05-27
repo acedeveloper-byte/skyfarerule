@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+
 const FlightHeader = () => {  
     const [isMobile, setIsMobile] = useState(false);
     const [isPhoneVisible, setPhoneVisible] = useState(true); // Default state is true (visible)
