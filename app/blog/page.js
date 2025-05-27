@@ -51,7 +51,7 @@ const Page = async () => {
                   <a href={`/blog/${item.blog_url}`} className="blog-img">
                     <img src={`${URL_IMAGE}${item.blog_images}`} alt={item.articulos_image_tag} />
                   </a>
-                  <span className="badge fs-13 fw-medium" style={{ backgroundColor: '#6D3E97' }}>Travel</span>
+                  <span className="badge fs-13 fw-medium" style={{ backgroundColor: '#6D3E97' }}>Blog</span>
                   <div className="blog-info text-center">
                     {/* <div className="d-inline-flex align-items-center justify-content-center">
                       <div className="d-inline-flex align-items-center border-end pe-3 me-3 mb-2">

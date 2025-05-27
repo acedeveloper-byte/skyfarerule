@@ -79,6 +79,10 @@ const FlightHeader = () => {
                                 <li><Link href="/" className="text-decoration-none text-white ">Home</Link></li>
                                 <li><Link href="/about-us" className="text-decoration-none text-white ">About Us</Link></li>
                                 <li><Link href="/blog" className="text-decoration-none text-white ">Blog</Link></li>
+                                <li><Link href="/articulos" className="text-decoration-none text-white ">Articulos</Link></li>
+                                <li><Link href="/pet-policy" className="text-decoration-none text-white ">Pet Policy</Link></li>
+
+
                                 <li><Link href="/contact-us" className="text-decoration-none text-white ">Contact Us</Link></li>
                                 <li><Link href="/privacy-policy" className="text-decoration-none text-white ">Privacy Policy</Link></li>
 
